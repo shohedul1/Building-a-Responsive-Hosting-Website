@@ -1,6 +1,24 @@
 import React from 'react'
 import SectionHeading from '../../Helper/SectionHeading'
-import Image from 'next/image'
+import Image from 'next/image';
+
+const AboutList = [
+    {
+        src: '/images/i1.svg',
+        title: "Web Hosting",
+        subtitle: 'Lorem ipsum dolor sit amet.'
+    },
+    {
+        src: '/images/i2.svg',
+        title: "Wordpress Hosting",
+        subtitle: 'Lorem ipsum dolor sit amet.'
+    },
+    {
+        src: '/images/i3.svg',
+        title: "VPS Hosting",
+        subtitle: 'Lorem ipsum dolor sit amet.'
+    }
+]
 
 const About = () => {
     return (
@@ -28,63 +46,30 @@ const About = () => {
                     <p className='mt-8 text-base text-[#556180] text-opacity-70'>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dolor suscipit doloremque iste ipsa numquam eaque tenetur aperiam, earum quis.
                     </p>
-                    <div className='mt-5 flex items-center space-x-8'>
-                        <div className='w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center flex-col'>
-                            <Image
-                                src={'/images/i1.svg'}
-                                alt='icon'
-                                width={40}
-                                height={40}
-                            />
-                        </div>
-                        <div>
-                            <h1 className='text-lg md:text-xl text-gray-700 font-bold'>
-                                Web Hosting
-                            </h1>
-                            <p className='mt-1 text-base text-[#556180] text-opacity-70'>
-                                Lorem ipsum dolor sit amet.
-                            </p>
-                        </div>
+                    {
+                        AboutList.map((item, index) => (
+                            <div key={index} className='mt-5 flex items-center space-x-8'>
+                                <div className='w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center flex-col'>
+                                    <Image
+                                        src={item.src}
+                                        alt='icon'
+                                        width={500}
+                                        height={500}
+                                        className='w-10 h-10'
+                                    />
+                                </div>
+                                <div>
+                                    <h1 className='text-lg md:text-xl text-gray-700 font-bold'>
+                                        {item.title}
+                                    </h1>
+                                    <p className='mt-1 text-base text-[#556180] text-opacity-70'>
+                                        {item.subtitle}
+                                    </p>
+                                </div>
 
-                    </div>
-                    <div className='mt-5 flex items-center space-x-8'>
-                        <div className='w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center flex-col'>
-                            <Image
-                                src={'/images/i2.svg'}
-                                alt='icon'
-                                width={40}
-                                height={40}
-                            />
-                        </div>
-                        <div>
-                            <h1 className='text-lg md:text-xl text-gray-700 font-bold'>
-                               Wordpress Hosting
-                            </h1>
-                            <p className='mt-1 text-base text-[#556180] text-opacity-70'>
-                                Lorem ipsum dolor sit amet.
-                            </p>
-                        </div>
-
-                    </div>
-                    <div className='mt-5 flex items-center space-x-8'>
-                        <div className='w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center flex-col'>
-                            <Image
-                                src={'/images/i3.svg'}
-                                alt='icon'
-                                width={40}
-                                height={40}
-                            />
-                        </div>
-                        <div>
-                            <h1 className='text-lg md:text-xl text-gray-700 font-bold'>
-                               VPS Hosting
-                            </h1>
-                            <p className='mt-1 text-base text-[#556180] text-opacity-70'>
-                                Lorem ipsum dolor sit amet.
-                            </p>
-                        </div>
-
-                    </div>
+                            </div>
+                        ))
+                    }
                 </div>
             </div>
         </div>
