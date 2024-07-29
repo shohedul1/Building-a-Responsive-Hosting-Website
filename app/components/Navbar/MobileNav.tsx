@@ -29,7 +29,7 @@ const MobileNav = ({ showNav, closeNav }: Props) => {
 
             ></div>
             <ul
-                className={` ${navOpenStyle} fixed top-0 left-0 bottom-0 flex items-center justify-center flex-col h-full transform transition-transform duration-300 w-4/5 md:w-[60%] bg-blue-900 space-y-14 z-[1006]`}
+                className={` ${navOpenStyle} fixed top-0 left-0 bottom-0 flex items-center justify-center flex-col h-full transform transition-transform duration-300 w-4/5 md:w-[60%] bg-blue-900 space-y-6 z-[1006]`}
             >
                 {LinkNav.map((item, index) => (
                     <li key={index}>

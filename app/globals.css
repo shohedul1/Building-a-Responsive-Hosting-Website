@@ -8,4 +8,8 @@
     .nav_link {
         @apply relative text-xl w-fit after:block after:content-[''] after:h-[3px] after:bg-yellow-300 text-white after:w-full font-medium after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-200 after:origin-right
     }
+
+    .swiper_slider{
+        @apply flex items-center rounded-2xl font-bold text-2xl text-white p-4
+    }
 }
