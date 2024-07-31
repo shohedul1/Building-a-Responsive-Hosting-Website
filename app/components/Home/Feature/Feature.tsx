@@ -9,7 +9,10 @@ const Feature = () => {
             {/* Define a grid system */}
             <div className='w-4/5 mx-auto mt-12 md:mt-20 items-center grid grid-cols-1 xl:grid-cols-2 gap-12'>
                 {/* text content */}
-                <div>
+                <div
+                    data-aos="fade-right"
+                    data-aos-anchor-placement="top-center"
+                >
                     <h1 className='text-2xl md:text-3xl lg:text-4xl text-blue-950 font-bold '>
                         We Provide Hosting Solution
                     </h1>

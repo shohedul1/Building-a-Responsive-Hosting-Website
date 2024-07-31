@@ -19,7 +19,10 @@ const DomainList = [
 
 const DomainSearch = () => {
     return (
-        <div className='pt-12 md:pt-20 pb-16'>
+        <div
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-center"
+            className='pt-12 md:pt-20 pb-16'>
             <div className='w-[90%] p-6 rounded-2xl bg-blue-700 mx-auto'>
                 {/* heading */}
                 <h1 className='text-center text-white font-semibold text-xl sm:text-2xl lg:text-3xl xl:text-4xl tracking-wider'>

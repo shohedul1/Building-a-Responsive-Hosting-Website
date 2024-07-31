@@ -10,7 +10,11 @@ const HostingOptions = () => {
             {/* Define System */}
             <div className='w-[85%] mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mx-auto gap-8'>
                 {/* Hosting Option Card 1 */}
-                <div>
+                <div
+                    data-aos="fade-right"
+                    data-aos-anchor-placement="top-center"
+                    data-aos-delay="200"
+                >
                     <HostingOptionCard
                         icon="/images/i4.png"
                         title="Wordpress Hosting"
@@ -18,7 +22,11 @@ const HostingOptions = () => {
                     />
                 </div>
                 {/* Hosting Option Card 2 */}
-                <div>
+                <div
+                    data-aos="fade-right"
+                    data-aos-anchor-placement="top-center"
+                    data-aos-delay="400"
+                >
                     <HostingOptionCard
                         icon="/images/i5.png"
                         title="Web Hosting"
@@ -26,7 +34,11 @@ const HostingOptions = () => {
                     />
                 </div>
                 {/* Hosting Option Card 3 */}
-                <div>
+                <div
+                    data-aos="fade-right"
+                    data-aos-anchor-placement="top-center"
+                    data-aos-delay="600"
+                >
                     <HostingOptionCard
                         icon="/images/i6.png"
                         title="VPS Hosting"
@@ -34,7 +46,11 @@ const HostingOptions = () => {
                     />
                 </div>
                 {/* Hosting Option Card 4 */}
-                <div>
+                <div
+                    data-aos="fade-right"
+                    data-aos-anchor-placement="top-center"
+                    data-aos-delay="800"
+                >
                     <HostingOptionCard
                         icon="/images/i7.png"
                         title="Shared Hosting"
@@ -43,7 +59,7 @@ const HostingOptions = () => {
                 </div>
             </div>
 
-        </div>
+        </div >
     )
 }
 

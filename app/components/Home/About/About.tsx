@@ -26,7 +26,10 @@ const About = () => {
             <SectionHeading heading='About us' />
             <div className='w-4/5 mx-auto items-center mt-24 grid grid-cols-1 lg:grid-cols-2 gap-20'>
                 {/* image content */}
-                <div className='mx-auto lg:mx-0 md:8 lg:mb-8'>
+                <div 
+                data-aos="zoom-in"
+                data-aos-anchor-placement="top-center"
+                className='mx-auto lg:mx-0 md:8 lg:mb-8'>
                     <Image
                         src={"/images/about2.jpg"}
                         alt='About us'
@@ -37,7 +40,11 @@ const About = () => {
 
                 </div>
                 {/* text content */}
-                <div className='lg:-translate-y-10 translate-y-0'>
+                <div 
+                 data-aos="fade-right"
+                data-aos-anchor-placement="top-center"
+                data-aos-delay="200" 
+                className='lg:-translate-y-10 translate-y-0'>
                     <h1 className='text-2xl md:text-3xl text-[#2d3c58] font-bold'>
                         We build Our Business For Your Success.
                     </h1>
